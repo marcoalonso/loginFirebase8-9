@@ -6,20 +6,25 @@
 //
 
 import UIKit
-import CLTypingLabel
+import Firebase
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var textBienvenidaLabel: CLTypingLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textBienvenidaLabel.charInterval = 0.09
-        textBienvenidaLabel.text = "Hola bienvenidos al Instituto Tecnologico de Morelia y a la materia de programacion movil II"
-        
+        validateAuth()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         
     }
 
+    private func validateAuth() {
+        if FirebaseAuth.Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "isLogedMenu", sender: self)
+        }
+    }
+    
 
 }
 

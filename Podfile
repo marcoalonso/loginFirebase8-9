@@ -11,6 +11,7 @@ pod 'CLTypingLabel'
 
 #Firebase
 pod 'Firebase/Analytics'
-
+pod 'Firebase/Auth'
+pod 'Firebase'
 
 end
