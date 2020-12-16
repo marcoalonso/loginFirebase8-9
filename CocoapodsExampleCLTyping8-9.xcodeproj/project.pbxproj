@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C2060A62587B14F00477BC3 /* MenuPrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2060A52587B14F00477BC3 /* MenuPrincipalViewController.swift */; };
 		6C8E457F257E6ED100A7CA32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E457E257E6ED100A7CA32 /* AppDelegate.swift */; };
 		6C8E4581257E6ED100A7CA32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E4580257E6ED100A7CA32 /* SceneDelegate.swift */; };
 		6C8E4583257E6ED100A7CA32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8E4582257E6ED100A7CA32 /* ViewController.swift */; };
@@ -14,11 +15,14 @@
 		6C8E4588257E6ED500A7CA32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E4587257E6ED500A7CA32 /* Assets.xcassets */; };
 		6C8E458B257E6ED500A7CA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E4589257E6ED500A7CA32 /* LaunchScreen.storyboard */; };
 		6CA48D4A257FC30900C269E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CA48D49257FC30800C269E4 /* GoogleService-Info.plist */; };
+		6CA48D5C257FC6AC00C269E4 /* RegistrarUsuariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA48D5B257FC6AC00C269E4 /* RegistrarUsuariosViewController.swift */; };
+		6CA48D5F257FC6BC00C269E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA48D5E257FC6BC00C269E4 /* LoginViewController.swift */; };
 		B347BA2AFB2E07EC01A033C6 /* Pods_CocoapodsExampleCLTyping8_9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E062B6E9FA6609AFD525C201 /* Pods_CocoapodsExampleCLTyping8_9.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E7320CC5ECE355AF5A7AC98 /* Pods-CocoapodsExampleCLTyping8-9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoapodsExampleCLTyping8-9.debug.xcconfig"; path = "Target Support Files/Pods-CocoapodsExampleCLTyping8-9/Pods-CocoapodsExampleCLTyping8-9.debug.xcconfig"; sourceTree = "<group>"; };
+		6C2060A52587B14F00477BC3 /* MenuPrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalViewController.swift; sourceTree = "<group>"; };
 		6C8E457B257E6ED100A7CA32 /* CocoapodsExampleCLTyping8-9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoapodsExampleCLTyping8-9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8E457E257E6ED100A7CA32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C8E4580257E6ED100A7CA32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		6C8E458A257E6ED500A7CA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C8E458C257E6ED500A7CA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CA48D49257FC30800C269E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6CA48D5B257FC6AC00C269E4 /* RegistrarUsuariosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuariosViewController.swift; sourceTree = "<group>"; };
+		6CA48D5E257FC6BC00C269E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9441A1C081C5459C8B4A8114 /* Pods-CocoapodsExampleCLTyping8-9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoapodsExampleCLTyping8-9.release.xcconfig"; path = "Target Support Files/Pods-CocoapodsExampleCLTyping8-9/Pods-CocoapodsExampleCLTyping8-9.release.xcconfig"; sourceTree = "<group>"; };
 		E062B6E9FA6609AFD525C201 /* Pods_CocoapodsExampleCLTyping8_9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoapodsExampleCLTyping8_9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,16 +80,35 @@
 		6C8E457D257E6ED100A7CA32 /* CocoapodsExampleCLTyping8-9 */ = {
 			isa = PBXGroup;
 			children = (
+				6CA48D62257FC6F000C269E4 /* Vistas */,
 				6C8E457E257E6ED100A7CA32 /* AppDelegate.swift */,
 				6C8E4580257E6ED100A7CA32 /* SceneDelegate.swift */,
-				6C8E4582257E6ED100A7CA32 /* ViewController.swift */,
-				6C8E4584257E6ED100A7CA32 /* Main.storyboard */,
 				6C8E4587257E6ED500A7CA32 /* Assets.xcassets */,
-				6C8E4589257E6ED500A7CA32 /* LaunchScreen.storyboard */,
 				6CA48D49257FC30800C269E4 /* GoogleService-Info.plist */,
 				6C8E458C257E6ED500A7CA32 /* Info.plist */,
+				6CA48D61257FC6CD00C269E4 /* Controladores */,
 			);
 			path = "CocoapodsExampleCLTyping8-9";
+			sourceTree = "<group>";
+		};
+		6CA48D61257FC6CD00C269E4 /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E4582257E6ED100A7CA32 /* ViewController.swift */,
+				6CA48D5B257FC6AC00C269E4 /* RegistrarUsuariosViewController.swift */,
+				6CA48D5E257FC6BC00C269E4 /* LoginViewController.swift */,
+				6C2060A52587B14F00477BC3 /* MenuPrincipalViewController.swift */,
+			);
+			name = Controladores;
+			sourceTree = "<group>";
+		};
+		6CA48D62257FC6F000C269E4 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E4589257E6ED500A7CA32 /* LaunchScreen.storyboard */,
+				6C8E4584257E6ED100A7CA32 /* Main.storyboard */,
+			);
+			name = Vistas;
 			sourceTree = "<group>";
 		};
 		E3AE3E15B79464DBA4EA2ED6 /* Frameworks */ = {
@@ -210,7 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C8E4583257E6ED100A7CA32 /* ViewController.swift in Sources */,
+				6CA48D5C257FC6AC00C269E4 /* RegistrarUsuariosViewController.swift in Sources */,
 				6C8E457F257E6ED100A7CA32 /* AppDelegate.swift in Sources */,
+				6CA48D5F257FC6BC00C269E4 /* LoginViewController.swift in Sources */,
+				6C2060A62587B14F00477BC3 /* MenuPrincipalViewController.swift in Sources */,
 				6C8E4581257E6ED100A7CA32 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
