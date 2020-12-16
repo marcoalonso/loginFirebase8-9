@@ -2,6 +2,7 @@
 //  MenuPrincipalViewController.swift
 //  CocoapodsExampleCLTyping8-9
 //
+<<<<<<< HEAD
 //  Created by marco alonso on 14/12/20.
 //
 
@@ -14,10 +15,21 @@ var contactos = [String]()
 class MenuPrincipalViewController: UIViewController {
     @IBOutlet weak var tabla: UITableView!
     
+=======
+//  Created by marco alonso on 09/12/20.
+//
+
+import UIKit
+import Firebase
+
+class MenuPrincipalViewController: UIViewController {
+
+>>>>>>> 3998de669b3297c056a38d224b6293aea4ebcee8
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.hidesBackButton = true
+<<<<<<< HEAD
         
         cargarContactos()
     }
@@ -87,4 +99,17 @@ extension MenuPrincipalViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     
+=======
+        // Do any additional setup after loading the view.
+    }
+    @IBAction func cerrarSesionButton(_ sender: UIBarButtonItem) {
+    do {
+        try Auth.auth().signOut()
+        //cerro sesion exitosamente
+        navigationController?.popToRootViewController(animated: true)
+    } catch let signOutError as NSError {
+      print ("Error signing out: %@", signOutError)
+    }
+    }
+>>>>>>> 3998de669b3297c056a38d224b6293aea4ebcee8
 }

@@ -14,6 +14,10 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase'
 
+<<<<<<< HEAD
+=======
+#Firestore BD
+>>>>>>> 3998de669b3297c056a38d224b6293aea4ebcee8
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
 

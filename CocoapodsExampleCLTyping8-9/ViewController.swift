@@ -6,15 +6,18 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 import CLTypingLabel
 import FirebaseAuth
+=======
+import Firebase
+>>>>>>> 3998de669b3297c056a38d224b6293aea4ebcee8
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var textBienvenidaLabel: CLTypingLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+<<<<<<< HEAD
         textBienvenidaLabel.charInterval = 0.09
         textBienvenidaLabel.text = "Hola bienvenidos al Instituto Tecnologico de Morelia y a la materia de programacion movil II"
         
@@ -26,8 +29,19 @@ class ViewController: UIViewController {
             //Si esta logueado un usuario
             performSegue(withIdentifier: "LogueadoMenu", sender: self)
         }
+=======
+        validateAuth()
+>>>>>>> 3998de669b3297c056a38d224b6293aea4ebcee8
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+    }
+    private func validateAuth() {
+        if FirebaseAuth.Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "isLogedMenu", sender: self)
+        }
+    }
+    
 
 }
 
