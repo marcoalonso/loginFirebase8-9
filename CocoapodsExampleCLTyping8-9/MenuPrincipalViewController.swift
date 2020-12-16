@@ -16,11 +16,7 @@ class MenuPrincipalViewController: UIViewController {
         navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
     }
-   
-    
-
     @IBAction func cerrarSesionButton(_ sender: UIBarButtonItem) {
-    
     do {
         try Auth.auth().signOut()
         //cerro sesion exitosamente
@@ -28,8 +24,5 @@ class MenuPrincipalViewController: UIViewController {
     } catch let signOutError as NSError {
       print ("Error signing out: %@", signOutError)
     }
-      
     }
-   
-
 }

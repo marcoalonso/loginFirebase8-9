@@ -11,23 +11,19 @@ import FirebaseAuth
 class IniciarSesionViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var correoTextField: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         if let email = correoTextField.text,
            let password = passwordTextField.text {
             //Iniciar sesion en firebase
-            Auth.auth().signIn(withEmail: email, password: password) {  authResult, error in //[weak self]  --> ///evita un ciclo cuando nos referimos al VC dentro del cierre y poder destruir el cotrolador de vista antes de que se complete el cierre
-                
+            Auth.auth().signIn(withEmail: email, password: password) {  authResult, error in
                 guard let result = authResult, error == nil else{
                     print("Error al iniciar sesison \(email)")
                     self.alertUserLoginError()
                     return
-                } // Valida que se logue en firebase y no haya errores
-
+                } // Valida que se logue en firebase y no haya errore
                 let user = result.user
                 print("\(user) correctamente logueado!")
                 self.performSegue(withIdentifier: "loginMenu", sender: self)

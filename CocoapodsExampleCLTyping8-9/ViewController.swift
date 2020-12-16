@@ -16,9 +16,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
     }
-
     private func validateAuth() {
         if FirebaseAuth.Auth.auth().currentUser != nil {
             performSegue(withIdentifier: "isLogedMenu", sender: self)

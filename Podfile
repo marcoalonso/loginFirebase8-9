@@ -14,4 +14,11 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase'
 
+#Firestore BD
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+
+# Optionally, include the Swift extensions if you're using Swift.
+pod 'FirebaseFirestoreSwift'
+
 end
